@@ -1,0 +1,17 @@
+{
+  "name": "Sauce_Auth",
+  "description": "Increase your marketing potential with AddSauce",
+  "require": {
+    "php": "~7.4.0||~8.2.0",
+    "magento/framework": "2.0.0",
+    "magento/module-integration": "2.0.0"
+  },
+  "type": "magento2-module",
+  "version": "0.1",
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Sauce\\Auth\\": ""
+    }
+  }
+}
