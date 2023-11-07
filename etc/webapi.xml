@@ -3,7 +3,7 @@
   <route url="/V1/sauce/products" method="GET">
     <service class="Sauce\Auth\Api\ProductApiInterface" method="getList"/>
     <resources>
-      <resource ref="anonymous"/>
+      <resource ref="Sauce_Auth::products"/>
     </resources>
   </route>
 </routes>
