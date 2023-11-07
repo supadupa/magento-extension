@@ -5,19 +5,34 @@ use Magento\Framework\Api\SearchResultsInterface;
 
 interface ProductSearchResultsInterface extends SearchResultsInterface
 {
-  /**
-   * Get products list.
-   *
-   * @return \Sauce\Auth\Api\Data\ProductInterface[]
-   */
-  public function getItems();
+    /**
+     * Get products list.
+     *
+     * @return \Sauce\Auth\Api\Data\ProductInterface[]
+     */
+    public function getItems();
 
-  /**
-   * Set products list.
-   *
-   * @param \Sauce\Auth\Api\Data\ProductInterface[] $items
-   * @return $this
-   */
-  public function setItems(array $items);
+    /**
+     * Set products list.
+     *
+     * @param \Sauce\Auth\Api\Data\ProductInterface[] $items
+     * @return $this
+     */
+    public function setItems(array $items);
+
+    /**
+     * Get extension version.
+     *
+     * @return string
+     */
+    public function getExtensionVersion();
+
+    /**
+     * Set extension version.
+     *
+     * @param string $version
+     * @return $this
+     */
+    public function setExtensionVersion($version);
 }
 
