@@ -1,7 +1,7 @@
 <?php
-namespace Sauce\Auth\Model;
+namespace Sauce\App\Model;
 
-class Product implements \Sauce\Auth\Api\Data\ProductInterface
+class Product implements \Sauce\App\Api\Data\ProductInterface
 {
   protected $sku;
   protected $url;

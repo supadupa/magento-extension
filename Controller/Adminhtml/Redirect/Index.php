@@ -1,5 +1,5 @@
 <?php
-namespace Sauce\Auth\Controller\Adminhtml\Redirect;
+namespace Sauce\App\Controller\Adminhtml\Redirect;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;

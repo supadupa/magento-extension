@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
   <menu>
-    <add id="Sauce_Auth::custom_menu" title="Add Sauce Social" module="Sauce_Auth" sortOrder="100" resource="Sauce_Auth::foo_bar" parent="Magento_Backend::marketing"/>
-    <add id="Sauce_Auth::connection_status" title="Connection Status" module="Sauce_Auth" sortOrder="10" parent="Sauce_Auth::custom_menu" action="sauce_auth/redirect/index/url/YXV0aC9tYWdlbnRvL3N0YXR1cw" resource="Sauce_Auth::foo_bar"/>
-    <add id="Sauce_Auth::added_media" title="Media Library" module="Sauce_Auth" sortOrder="20" parent="Sauce_Auth::custom_menu" action="sauce_auth/redirect/index/url/L2JhY2tvZmZpY2UvbWVkaWEvYWRkZWQ" resource="Sauce_Auth::foo_bar"/>
+    <add id="Sauce_App::custom_menu" title="Add Sauce Social" module="Sauce_App" sortOrder="100" resource="Sauce_App::foo_bar" parent="Magento_Backend::marketing"/>
+    <add id="Sauce_App::connection_status" title="Connection Status" module="Sauce_App" sortOrder="10" parent="Sauce_App::custom_menu" action="sauce_auth/redirect/index/url/YXV0aC9tYWdlbnRvL3N0YXR1cw" resource="Sauce_App::foo_bar"/>
+    <add id="Sauce_App::added_media" title="Media Library" module="Sauce_App" sortOrder="20" parent="Sauce_App::custom_menu" action="sauce_auth/redirect/index/url/L2JhY2tvZmZpY2UvbWVkaWEvYWRkZWQ" resource="Sauce_App::foo_bar"/>
   </menu>
 </config>
 

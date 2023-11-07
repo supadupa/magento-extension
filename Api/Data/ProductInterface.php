@@ -1,5 +1,5 @@
 <?php
-namespace Sauce\Auth\Api\Data;
+namespace Sauce\App\Api\Data;
 
 interface ProductInterface
 {

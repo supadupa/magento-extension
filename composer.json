@@ -1,5 +1,5 @@
 {
-  "name": "Sauce_Auth",
+  "name": "Sauce_App",
   "description": "Increase your marketing potential with AddSauce",
   "require": {
     "php": "~7.4.0||~8.2.0",
@@ -11,7 +11,7 @@
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
-      "Sauce\\Auth\\": ""
+      "Sauce\\App\\": ""
     }
   }
 }

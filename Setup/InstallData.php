@@ -1,5 +1,5 @@
 <?php
-namespace Sauce\Auth\Setup;
+namespace Sauce\App\Setup;
 
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;

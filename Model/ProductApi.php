@@ -1,9 +1,9 @@
 <?php
-namespace Sauce\Auth\Model;
+namespace Sauce\App\Model;
 
-use Sauce\Auth\Api\ProductApiInterface;
-use Sauce\Auth\Api\Data\ProductInterfaceFactory;
-use Sauce\Auth\Api\Data\ProductSearchResultsInterfaceFactory;
+use Sauce\App\Api\ProductApiInterface;
+use Sauce\App\Api\Data\ProductInterfaceFactory;
+use Sauce\App\Api\Data\ProductSearchResultsInterfaceFactory;
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Module\ModuleListInterface;
@@ -33,7 +33,7 @@ class ProductApi implements ProductApiInterface
     $searchResults->setSearchCriteria($searchCriteria);
 
     // Get the module version
-    $moduleInfo = $this->moduleList->getOne('Sauce_Auth');
+    $moduleInfo = $this->moduleList->getOne('Sauce_App');
     $extensionVersion = $moduleInfo['setup_version'] ?? 'unknown';
     $searchResults->setExtensionVersion($extensionVersion);
 

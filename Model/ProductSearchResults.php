@@ -1,8 +1,8 @@
 <?php
-namespace Sauce\Auth\Model;
+namespace Sauce\App\Model;
 
 use Magento\Framework\Api\SearchResults;
-use Sauce\Auth\Api\Data\ProductSearchResultsInterface;
+use Sauce\App\Api\Data\ProductSearchResultsInterface;
 
 class ProductSearchResults extends SearchResults implements ProductSearchResultsInterface
 {
