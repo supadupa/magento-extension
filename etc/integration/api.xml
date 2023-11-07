@@ -1,10 +1,15 @@
 <integrations>
-    <integration name="AddSauceIntegration">
-        <resources>
-          <resource name="Magento_Catalog::catalog" />
-          <resource name="Magento_Catalog::catalog_inventory" />
-          <resource name="Magento_Catalog::products" />
-          <resource name="Magento_Config::config_system" />
-        </resources>
-    </integration>
+  <integration name="AddSauceIntegration">
+    <resources>
+      <!-- we need to know the catalog for livelinks -->
+      <resource name="Magento_Catalog::catalog" />
+      <resource name="Magento_Catalog::catalog_inventory" />
+      <resource name="Magento_Catalog::products" />
+
+      <!-- we want to get certain store data -->
+      <resource name="Magento_Backend::stores" />
+      <resource name="Magento_Backend::stores_settings" />
+      <resource name="Magento_Config::config" />
+    </resources>
+  </integration>
 </integrations>
