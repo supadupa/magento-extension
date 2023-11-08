@@ -1,5 +1,7 @@
 # Sauce Magento Extension 
 
+Our own special Magento Application
+
 ```
   __      _
 o'')}____//
@@ -8,19 +10,28 @@ o'')}____//
 
 ```
 
-
 ## Features 
 
-* adds a new endpoint at `/rest/v1/products/sauce` which provides a custom feed
-  for our hotspots feature 
-* returns the version number in the custom endpoint, so you can ascertain what
+* Provides Sauce configuration options for Magento integrations. *If you
+  intend to test (see below) the appication in different environments, be mindful of the
+  values set in `./etc/integrations/config.xml`*
+* Adds a new endpoint at `/rest/v1/products/sauce` which provides a custom feed
+  for our hotspots feature.
+* Adds a custom permission which our endpoint sits behind.
+* Returns the version number in the custom endpoint, so you can ascertain what
   version of the application the client has installed.
-* Adds a set of Links in Marketing > Add Sauce Social > Connection Status /
-  Media Library. Currently these links redirect the user to our platform.
+* Adds a set of Links in `Marketing > Add Sauce Social > Connection Status /
+  Media Library`. Currently these links redirect the user to [our platform](https://github.con/supadupa/sauce)] 
+  rather than render anything within Magento.
 
 ## Before updating, please read first
 
 [Semver](https://semver.org)
+
+
+## How to test 
+
+TODO: write this section when you know
 
 
 ## Ratonale for Repo 

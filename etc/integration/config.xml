@@ -1,9 +1,7 @@
 <integrations>
    <integration name="AddSauceIntegration">
       <email>support@addsauce.com</email>
-      <!-- <endpoint_url>https://app.addsauce.com/auth/magento</endpoint_url> -->
-      <!-- <identity_link_url>https://app.addsauce.com/auth/magento</identity_link_url> -->
-      <endpoint_url>http://sauce-app:3000/auth/magento</endpoint_url>
-      <identity_link_url>https://app.addsauce.test/auth/magento</identity_link_url>
+      <endpoint_url>https://app.addsauce.com/auth/magento</endpoint_url>
+      <identity_link_url>https://app.addsauce.com/auth/magento</identity_link_url>
    </integration>
 </integrations>
