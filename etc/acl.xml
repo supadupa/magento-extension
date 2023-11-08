@@ -3,10 +3,16 @@
   <acl>
     <resources>
       <resource id="Magento_Backend::admin">
+        <resource id="Magento_Backend::stores">
+          <resource id="Magento_Backend::stores_settings">
+            <resource id="Magento_Config::config" title="Configuration" sortOrder="50" />
+            <resource id="Magento_Config::stores_all" title="Store Data" sortOrder="50" />
+          </resource>
+        </resource>
         <resource id="Magento_Catalog::catalog" >
           <resource id="Magento_Catalog::catalog_inventory" >
             <resource id="Magento_Catalog::products" >
-              <resource id="Sauce_App::products" title="AddSauce Products Feed" sortOrder="100" />
+              <resource id="Sauce_App::products" title="AddSauce Feed" sortOrder="100" />
             </resource>
           </resource>
         </resource>

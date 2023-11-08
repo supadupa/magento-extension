@@ -12,6 +12,7 @@
       <resource name="Magento_Backend::stores_settings" />
       <resource name="Magento_Backend::stores_all" />
       <resource name="Magento_Config::config" />
+      <resource name="Magento_Config::stores_all" />
       
     </resources>
   </integration>
