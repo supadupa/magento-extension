@@ -4,27 +4,27 @@ namespace Sauce\App\Model;
 use Sauce\App\Api\ProductApiInterface;
 use Sauce\App\Api\Data\ProductInterfaceFactory;
 use Sauce\App\Api\Data\ProductSearchResultsInterfaceFactory;
+use Sauce\App\Helper\Version;
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
-use Magento\Framework\Module\ModuleListInterface;
 
 class ProductApi implements ProductApiInterface
 {
   protected $productInterfaceFactory;
   protected $productSearchResultsInterfaceFactory;
   protected $productRepository;
-  protected $moduleList;
+  protected $versionHelper;
 
   public function __construct(
     ProductInterfaceFactory $productInterfaceFactory,
     ProductSearchResultsInterfaceFactory $productSearchResultsInterfaceFactory,
     ProductRepositoryInterface $productRepository,
-    ModuleListInterface $moduleList
+    Version $versionHelper
   ) {
     $this->productInterfaceFactory = $productInterfaceFactory;
     $this->productSearchResultsInterfaceFactory = $productSearchResultsInterfaceFactory;
     $this->productRepository = $productRepository;
-    $this->moduleList = $moduleList;
+    $this->versionHelper = $versionHelper; 
   }
 
   public function getList(SearchCriteriaInterface $searchCriteria)
@@ -33,8 +33,8 @@ class ProductApi implements ProductApiInterface
     $searchResults->setSearchCriteria($searchCriteria);
 
     // Get the module version
-    $moduleInfo = $this->moduleList->getOne('Sauce_App');
-    $extensionVersion = $moduleInfo['setup_version'] ?? 'unknown';
+    $version = $this->versionHelper->getModuleVersion('Sauce_App');
+    $extensionVersion = $version ?? 'unknown';
     $searchResults->setExtensionVersion($extensionVersion);
 
     $products = $this->productRepository->getList($searchCriteria);

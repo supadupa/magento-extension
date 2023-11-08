@@ -1,31 +1,28 @@
-# IMPORTANT
+# Sauce Magento Extension 
+
+```
+  __      _
+o'')}____//
+ `_/      )
+ (_(_/-(_/
+
+```
+
+
+## Features 
+
+* adds a new endpoint at `/rest/v1/products/sauce` which provides a custom feed
+  for our hotspots feature 
+* returns the version number in the custom endpoint, so you can ascertain what
+  version of the application the client has installed.
+* Adds a set of Links in Marketing > Add Sauce Social > Connection Status /
+  Media Library. Currently these links redirect the user to our platform.
+
 ## Before updating, please read first
 
-[https://semver.org/](given we start with version number: 0.0.1)
+[Semver](https://semver.org)
 
-### making a MAJOR version change to 1.0.0
 
-* change  `./etc/webapi.xml` 
-
-```
-<route url="/sauce/v0/products" method="GET">
-```
-to:
-
-```
-<route url="/sauce/v1/products" method="GET">
-```
-
-* update `composer.json`.
-
-### making a MINOR version change to 0.1.0
-
-* update `composer.json`    
-
-### making a PATCH version change to 0.0.1
-
-* update `composer.json` 
-
-# Ratonale for Repo 
+## Ratonale for Repo 
 
 App is an submodule of [sauce magento](https://github.com/supadupa/sauce-magento) - We can develop in Magento and manage releases independently. Haivng as a seperate repo/module allows us to test composer installation using VCS while also allowing us to develop within Magento.
