@@ -1,8 +1,9 @@
-# Sauce Magento Extension 
+# AddSauce Magento Extension 
 
-Our own special Magento Application
+Social Media Maketing made Simple :) 
 
 ```
+WOOF!
   __      _
 o'')}____//
  `_/      )
@@ -12,28 +13,17 @@ o'')}____//
 
 ## Features 
 
-* Provides Sauce configuration options for Magento integrations. *If you
-  intend to test (see below) the appication in different environments, be mindful of the
-  values set in `./etc/integrations/config.xml`*
+* Provides Sauce configuration options for Magento integrations. 
 * Adds a new endpoint at `/rest/v1/products/sauce` which provides a custom feed
   for our hotspots feature.
-* Adds a custom permission which our endpoint sits behind.
-* Returns the version number in the custom endpoint, so you can ascertain what
-  version of the application the client has installed.
+* Adds a custom permission which the product endpoint sits behind.
+* Returns the version number in the custom endpoint, so we can always ascertain 
+  what version of our application you are using..
 * Adds a set of Links in `Marketing > Add Sauce Social > Connection Status /
-  Media Library`. Currently these links redirect the user to [our platform](https://github.con/supadupa/sauce)] 
-  rather than render anything within Magento.
+  Media Library`. Currently these links redirect the user to [our platform](https://github.con/supadupa/sauce)].
 
-## Before updating, please read first
+## Planned Features 
 
-[Semver](https://semver.org)
+[] Implement conversion tracker. 
+[] Enable custom AddSauce UI blocks.
 
-
-## How to test 
-
-TODO: write this section when you know
-
-
-## Ratonale for Repo 
-
-App is an submodule of [sauce magento](https://github.com/supadupa/sauce-magento) - We can develop in Magento and manage releases independently. Haivng as a seperate repo/module allows us to test composer installation using VCS while also allowing us to develop within Magento.
