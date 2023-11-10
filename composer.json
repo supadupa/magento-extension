@@ -1,15 +1,15 @@
 {
-  "name": "sauce/app",
-  "description": "Increase your marketing potential with AddSauce Social Media Marketing",
+  "name": "add_sauce/app",
+  "description": "Increase your marketing potential with AddAddSauce Social Media Marketing",
   "require": {
     "php": "~7.4.0||~8.2.0"
   },
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
-      "Sauce\\App\\": ""
+      "AddSauce\\App\\": ""
     }
   }
 }

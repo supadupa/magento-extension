@@ -5,7 +5,7 @@
 */
 
 \Magento\Framework\Component\ComponentRegistrar::register(
-\Magento\Framework\Component\ComponentRegistrar::MODULE,
-'Sauce_App',
-__DIR__
+  \Magento\Framework\Component\ComponentRegistrar::MODULE,
+  'AddSauce_App',
+  __DIR__
 );

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Sauce\App\Api\ProductApiInterface" type="Sauce\App\Model\ProductApi"/>
-    <preference for="Sauce\App\Api\Data\ProductInterface" type="Sauce\App\Model\Product"/>
-    <preference for="Sauce\App\Api\Data\ProductSearchResultsInterface" type="Sauce\App\Model\ProductSearchResults"/>
+    <preference for="AddSauce\App\Api\ProductApiInterface" type="AddSauce\App\Model\ProductApi"/>
+    <preference for="AddSauce\App\Api\Data\ProductInterface" type="AddSauce\App\Model\Product"/>
+    <preference for="AddSauce\App\Api\Data\ProductSearchResultsInterface" type="AddSauce\App\Model\ProductSearchResults"/>
 </config>
 

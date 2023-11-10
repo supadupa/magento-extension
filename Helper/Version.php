@@ -1,5 +1,5 @@
 <?php
-namespace Sauce\App\Helper;
+namespace AddSauce\App\Helper;
 
 use Magento\Framework\Component\ComponentRegistrar;
 use Magento\Framework\Component\ComponentRegistrarInterface;
