@@ -1,10 +1,10 @@
 <?php
-namespace Sauce\App\Model;
+namespace AddSauce\App\Model;
 
-use Sauce\App\Api\ProductApiInterface;
-use Sauce\App\Api\Data\ProductInterfaceFactory;
-use Sauce\App\Api\Data\ProductSearchResultsInterfaceFactory;
-use Sauce\App\Helper\Version;
+use AddSauce\App\Api\ProductApiInterface;
+use AddSauce\App\Api\Data\ProductInterfaceFactory;
+use AddSauce\App\Api\Data\ProductSearchResultsInterfaceFactory;
+use AddSauce\App\Helper\Version;
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 
@@ -33,7 +33,7 @@ class ProductApi implements ProductApiInterface
     $searchResults->setSearchCriteria($searchCriteria);
 
     // Get the module version
-    $version = $this->versionHelper->getModuleVersion('Sauce_App');
+    $version = $this->versionHelper->getModuleVersion('AddSauce_App');
     $extensionVersion = $version ?? 'unknown';
     $searchResults->setExtensionVersion($extensionVersion);
 

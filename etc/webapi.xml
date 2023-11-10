@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
   <route url="/V1/products/sauce" method="GET">
-    <service class="Sauce\App\Api\ProductApiInterface" method="getList"/>
+    <service class="AddSauce\App\Api\ProductApiInterface" method="getList"/>
     <resources>
-      <resource ref="Sauce_App::products"/>
+      <resource ref="AddSauce_App::products"/>
     </resources>
   </route>
 </routes>

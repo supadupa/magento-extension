@@ -12,7 +12,7 @@
         <resource id="Magento_Catalog::catalog" >
           <resource id="Magento_Catalog::catalog_inventory" >
             <resource id="Magento_Catalog::products" >
-              <resource id="Sauce_App::products" title="AddSauce Feed" sortOrder="100" />
+              <resource id="AddSauce_App::products" title="AddSauce Feed" sortOrder="100" />
             </resource>
           </resource>
         </resource>
