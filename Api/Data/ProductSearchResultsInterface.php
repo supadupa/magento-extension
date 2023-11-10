@@ -1,5 +1,5 @@
 <?php
-namespace Sauce\App\Api\Data;
+namespace AddSauce\App\Api\Data;
 
 use Magento\Framework\Api\SearchResultsInterface;
 
@@ -8,14 +8,14 @@ interface ProductSearchResultsInterface extends SearchResultsInterface
     /**
      * Get products list.
      *
-     * @return \Sauce\App\Api\Data\ProductInterface[]
+     * @return \AddSauce\App\Api\Data\ProductInterface[]
      */
     public function getItems();
 
     /**
      * Set products list.
      *
-     * @param \Sauce\App\Api\Data\ProductInterface[] $items
+     * @param \AddSauce\App\Api\Data\ProductInterface[] $items
      * @return $this
      */
     public function setItems(array $items);

@@ -1,8 +1,8 @@
 <?php
-namespace Sauce\App\Api;
+namespace AddSauce\App\Api;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
-use Sauce\App\Api\Data\ProductSearchResultsInterface;
+use AddSauce\App\Api\Data\ProductSearchResultsInterface;
 
 interface ProductApiInterface
 {

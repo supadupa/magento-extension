@@ -1,5 +1,5 @@
 <?php
-namespace Sauce\App\Plugin;
+namespace AddSauce\App\Plugin;
 
 class ProductRepositoryPlugin
 {
