@@ -35,4 +35,3 @@ interface ProductSearchResultsInterface extends SearchResultsInterface
      */
     public function setExtensionVersion($version);
 }
-

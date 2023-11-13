@@ -77,8 +77,4 @@ interface ProductInterface
      * @return $this
      */
     public function setMediaGalleryEntries(array $mediaGalleryEntries);
-
 }
-
-
-

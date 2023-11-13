@@ -12,6 +12,5 @@ interface ProductApiInterface
    * @param SearchCriteriaInterface $searchCriteria
    * @return ProductSearchResultsInterface
    */
-  public function getList(SearchCriteriaInterface $searchCriteria);
+    public function getList(SearchCriteriaInterface $searchCriteria);
 }
-

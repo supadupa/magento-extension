@@ -9,17 +9,16 @@ class ProductSearchResults extends SearchResults implements ProductSearchResults
   /**
    * @var string
    */
-  protected $extensionVersion;
+    protected $extensionVersion;
 
-  public function getExtensionVersion()
-  {
-    return $this->extensionVersion;
-  }
+    public function getExtensionVersion()
+    {
+        return $this->extensionVersion;
+    }
 
-  public function setExtensionVersion($version)
-  {
-    $this->extensionVersion = $version;
-    return $this;
-  }
+    public function setExtensionVersion($version)
+    {
+        $this->extensionVersion = $version;
+        return $this;
+    }
 }
-
