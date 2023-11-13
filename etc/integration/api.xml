@@ -4,13 +4,12 @@
       <!-- we need to know the catalog for livelinks -->
       <resource name="Magento_Catalog::catalog" />
       <resource name="Magento_Catalog::catalog_inventory" />
-      <resource name="Magento_Catalog::products" />
       <resource name="Sauce_App::products" />
 
       <!-- we want to get certain store data -->
+      <resource name="Magento_Backend::store" />
       <resource name="Magento_Backend::stores" />
       <resource name="Magento_Backend::stores_settings" />
-      <resource name="Magento_Backend::stores_all" />
       <resource name="Magento_Config::config" />
       <resource name="Magento_Config::stores_all" />
       
