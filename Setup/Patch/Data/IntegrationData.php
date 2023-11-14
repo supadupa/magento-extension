@@ -20,7 +20,7 @@ class IntegrationData implements DataPatchInterface
 
     public function apply()
     {
-        $this->integrationManager->processIntegrationConfig(['AddSauceIntegration']);
+        $this->integrationManager->processIntegrationConfig(['Sauce Social Commerce']);
     }
 
     public static function getDependencies()
