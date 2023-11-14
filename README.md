@@ -1,5 +1,7 @@
 # Sauce Social Media Marketing: Magento Extension 
 
+See our User Guide here: https://help.addsauce.com/en/articles/8540371-user-guide-for-the-sauce-magento-extension-for-live-links
+
 ## Features 
 
 * Provides Sauce configuration data for Magento integrations. 
@@ -8,13 +10,21 @@
 * Adds a link to platform via `Content > Sauce Social Media Marketing > Media Library`. 
   Currently this redirects to [our platform](https://app.addsauce.com/backoffice/media/added).
 
+## Install via composer (recommend)
+
+```
+composer require sauce/app
+php bin/magento maintenance:enable
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy
+php bin/magento maintenance:disable
+php bin/magento cache:clean
+```
+
 ## Installation Notes 
 
 1. `composer require sauce/app`
 2. `composer install`
 
-## Planned Features 
-
-- [] Implement conversion tracker. 
-- [] Enable custom Sauce UI blocks.
-
+Copyright © 2023 Sauce. All rights reserved.
