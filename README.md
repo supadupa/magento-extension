@@ -4,10 +4,10 @@ See our User Guide here: https://help.addsauce.com/en/articles/8540371-user-guid
 
 ## Features 
 
-* Provides Sauce configuration data for Magento integrations. 
+* Provides Sauce configuration data for Magento integration. 
 * Adds custom API endpoint @ `/rest/v1/sauce/products` which provides a custom
-  feed for our hotspots feature. The feed is set with a permission.
-* Adds a link to platform via `Content > Sauce Social Media Marketing > Media Library`. 
+  feed for our hotspots feature. The feed is set with a custom permission.
+* We add a link to `Content > Sauce Social Media Marketing > Media Library`. 
   Currently this redirects to [our platform](https://app.addsauce.com/backoffice/media/added).
 
 ## Install via composer (recommend)
@@ -22,9 +22,7 @@ php bin/magento maintenance:disable
 php bin/magento cache:clean
 ```
 
-## Installation Notes 
 
-1. `composer require sauce/app`
-2. `composer install`
+## License 
 
 Copyright © 2023 Sauce. All rights reserved.
