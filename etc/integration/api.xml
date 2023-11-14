@@ -1,5 +1,5 @@
 <integrations>
-  <integration name="AddSauceIntegration">
+  <integration name="Sauce Social Commerce">
     <resources>
       <!-- we need to read Catalog data for livelinks -->
       <resource name="Magento_Catalog::catalog" />
