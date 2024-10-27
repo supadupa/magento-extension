@@ -1,10 +1,31 @@
 <?xml version="1.0"?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
   <route url="/V1/sauce/products" method="GET">
     <service class="Sauce\App\Api\ProductApiInterface" method="getList"/>
     <resources>
       <resource ref="Sauce_App::products"/>
     </resources>
   </route>
-</routes>
 
+  <route url="/V1/sauce/account" method="POST">
+    <service class="Sauce\App\Api\AccountApiInterface" method="saveAccountID"/>
+    <resources>
+      <resource ref="Magento_Backend::admin"/>
+    </resources>
+  </route>
+
+  <route url="/V1/sauce/accountID" method="GET">
+    <service class="Sauce\App\Api\AccountApiInterface" method="getAccountID"/>
+    <resources>
+      <resource ref="Magento_Backend::admin"/>
+    </resources>
+  </route>
+
+  <route url="/V1/sauce/version" method="GET">
+    <service class="Sauce\App\Api\AccountApiInterface" method="getSauceVersion"/>
+    <resources>
+      <resource ref="Magento_Backend::admin"/>
+    </resources>
+  </route>
+</routes>

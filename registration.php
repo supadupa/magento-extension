@@ -1,11 +1,9 @@
 <?php
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
 
-\Magento\Framework\Component\ComponentRegistrar::register(
-    \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Sauce_App',
-    __DIR__
+use Magento\Framework\Component\ComponentRegistrar;
+
+ComponentRegistrar::register(
+    type: ComponentRegistrar::MODULE,
+    componentName: 'Sauce_App',
+    path: __DIR__
 );

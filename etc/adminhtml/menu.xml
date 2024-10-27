@@ -5,4 +5,3 @@
     <add id="Sauce_App::added_media" title="Media Gallery" module="Sauce_App" sortOrder="20" parent="Sauce_App::custom_menu" action="sauce_app/redirect/index/url/YmFja29mZmljZS9tZWRpYS9hZGRlZD91dG1fc291cmNlPW1hZ2VudG8" resource="Sauce_App::external_link"/>
   </menu>
 </config>
-
