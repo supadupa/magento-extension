@@ -1,0 +1,9 @@
+<?php if ($block->getLastOrder()): ?>
+  <script>
+    window.snapppt_order_number = '<?= $block->getEscaper()->escapeHtml($block->getOrderNumber()) ?>';
+    window.snapppt_order_total = '<?= $block->getEscaper()->escapeHtml($block->getOrderTotal()) ?>';
+    window.snapppt_order_currency = '<?= $block->getEscaper()->escapeHtml($block->getOrderCurrency()) ?>';
+    window.snapppt_account = <?= $block->getEscaper()->escapeHtml($block->getAccountID()) ?>;
+  </script>
+  <script src="//app.addsauce.com/conversion-tracker.js" defer></script>
+<?php endif; ?>

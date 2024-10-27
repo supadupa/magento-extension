@@ -3,5 +3,5 @@
     <preference for="Sauce\App\Api\ProductApiInterface" type="Sauce\App\Model\ProductApi"/>
     <preference for="Sauce\App\Api\Data\ProductInterface" type="Sauce\App\Model\Product"/>
     <preference for="Sauce\App\Api\Data\ProductSearchResultsInterface" type="Sauce\App\Model\ProductSearchResults"/>
+    <preference for="Sauce\App\Api\AccountApiInterface" type="Sauce\App\Model\Account" />
 </config>
-

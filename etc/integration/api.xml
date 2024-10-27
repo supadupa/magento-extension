@@ -8,11 +8,11 @@
       <resource name="Magento_Catalog::products" />
       <resource name="Sauce_App::products" />
 
-      <!-- we need to read Store configurtion Data  -->
+      <!-- we need to read Store configuration Data  -->
       <resource name="Magento_Backend::store" />
       <resource name="Magento_Backend::stores" />
       <resource name="Magento_Config::config" />
-      
+
     </resources>
   </integration>
 </integrations>
