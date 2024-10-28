@@ -7,7 +7,7 @@
     "magento/module-integration": "^100.4.6"
   },
   "type": "magento2-module",
-  "version": "1.2.0",
+  "version": "1.2.0-rc1",
   "autoload": {
     "files": [
       "registration.php"
