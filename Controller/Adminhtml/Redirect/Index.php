@@ -36,7 +36,7 @@ class Index extends Action
     {
         $encodedUrlSegment = $this->getRequest()->getParam('url');
         $urlSegment = $this->urlDecoder->decode($encodedUrlSegment);
-        $url = 'https://app.addsauce.com/' . $urlSegment; // Concatenate the parameter
+        $url = 'https://app.addsauce.test/' . $urlSegment; // Concatenate the parameter
 
         /** @var \Magento\Framework\Controller\Result\Redirect $resultRedirect */
         $resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
