@@ -9,6 +9,7 @@ use Magento\Integration\Model\ConfigBasedIntegrationManager;
  * Data patch for Sauce Integration.
  *
  * Sets up data needed for the Sauce Social Commerce integration.
+ * Creates integration in the Magento DB integration table
  */
 class IntegrationData implements DataPatchInterface
 {
