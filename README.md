@@ -10,6 +10,12 @@ See our User Guide here: https://help.addsauce.com/en/articles/8540371-user-guid
 * We add a link to `Content > Sauce Social Media Marketing > Media Library`. 
   Currently this redirects to [our platform](https://app.addsauce.com/backoffice/media/added).
 
+## Compatibility
+
+Verified with Magento Open Source / Adobe Commerce 2.4.8. Magento 2.4.8 is
+tested by Adobe on PHP 8.3 and 8.4; this extension keeps a broader Composer PHP
+constraint for compatibility with older supported installs.
+
 ## Install via composer (recommend)
 
 ```
@@ -25,4 +31,4 @@ php bin/magento cache:clean
 
 ## License 
 
-Copyright © 2023 Sauce. All rights reserved.
+Copyright © 2026 Sauce. All rights reserved.
